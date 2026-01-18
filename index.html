@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIS Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">AIS</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="hello">HELLO!</p>
+    <h1>I'm <span>Angelica</span></h1>
+    <h2>Accounting Information System Student</h2>
+
+    <div class="hero-buttons">
+      <button class="btn-primary">Hire Me</button>
+      <button class="btn-outline" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">My Works</button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <h3>3+</h3>
+        <p>Projects</p>
+      </div>
+      <div class="stat">
+        <h3>50+</h3>
+        <p>Excel Templates</p>
+      </div>
+      <div class="stat">
+        <h3>100%</h3>
+        <p>Dedication</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="image-glow"></div>
+    <img src="profile2.png" alt="Profile">
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="profile.png" alt="Profile">
+  </div>
+
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      I am an Accounting Information System student specializing in Excel automation,
+      financial systems, and data analytics for business efficiency.
+    </p>
+
+    <ul class="info">
+      <li><b>Name:</b> Angelica Pascua</li>
+      <li><b>Field:</b> Accounting Information Systems</li>
+      <li><b>Specialty:</b> Excel Automation</li>
+      <li><b>Email:</b> example@email.com</li>
+    </ul>
+
+    <button class="btn-primary">Download CV</button>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skill">
+    <span>Excel Automation</span>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Financial Accounting</span>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>VBA & Macros</span>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Data Analysis</span>
+    <div class="bar"><div style="width:75%"></div></div>
+  </div>
+</section>
+
+<section class="certifications" id="certifications">
+  <h2>Certifications & Achievements</h2>
+  
+  <div class="certifications-grid">
+    <div class="cert-card">
+      <div class="cert-badge">🏆</div>
+      <h3>Microsoft Excel Specialist</h3>
+      <p>Certified in advanced Excel functions, pivot tables, and data visualization.</p>
+      <span class="cert-year">2024</span>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-badge">📊</div>
+      <h3>Financial Analysis Professional</h3>
+      <p>Expertise in financial statements, budgeting, and business intelligence.</p>
+      <span class="cert-year">2023</span>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-badge">⚙️</div>
+      <h3>VBA & Automation Expert</h3>
+      <p>Proficient in VBA macros, automation, and process optimization.</p>
+      <span class="cert-year">2024</span>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-icon">📊</div>
+      <h3>Excel Accounting Automation System</h3>
+      <p>Automated accounting calculations, reports, and dashboards using Excel and VBA.</p>
+      <div class="project-tags">
+        <span class="tag">Excel</span>
+        <span class="tag">VBA</span>
+        <span class="tag">Automation</span>
+      </div>
+      <div class="project-buttons">
+        <button class="btn-primary" onclick="openProjectModal(0)">View Demo</button>
+        <button class="btn-outline-sm">GitHub</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">💰</div>
+      <h3>Financial Analysis Dashboard</h3>
+      <p>Interactive financial dashboard for real-time data analysis and reporting with charts and metrics.</p>
+      <div class="project-tags">
+        <span class="tag">Excel</span>
+        <span class="tag">Data Analysis</span>
+        <span class="tag">Pivot Tables</span>
+      </div>
+      <div class="project-buttons">
+        <button class="btn-primary" onclick="openProjectModal(1)">View Demo</button>
+        <button class="btn-outline-sm">GitHub</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">📈</div>
+      <h3>Inventory Management System</h3>
+      <p>Comprehensive inventory tracking system with automated stock alerts and reporting capabilities.</p>
+      <div class="project-tags">
+        <span class="tag">VBA</span>
+        <span class="tag">Database</span>
+        <span class="tag">Macros</span>
+      </div>
+      <div class="project-buttons">
+        <button class="btn-primary" onclick="openProjectModal(2)">View Demo</button>
+        <button class="btn-outline-sm">GitHub</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-modern" id="contact">
+
+  <div class="contact-container">
+
+    <!-- LEFT PANEL -->
+    <div class="contact-left">
+      <span class="contact-badge">Contact</span>
+      <h2>Get in touch</h2>
+      <p>Have questions or want to collaborate on accounting systems or Excel automation projects?</p>
+
+      <div class="contact-card">
+        <span>📧</span>
+        <div>
+          <small>Email us</small>
+          <p>angelica@email.com</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <span>📞</span>
+        <div>
+          <small>Call us</small>
+          <p>+63 900 000 0000</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <span>📍</span>
+        <div>
+          <small>Location</small>
+          <p>Philippines</p>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT PANEL (FORM) -->
+    <div class="contact-right">
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal">
+  <div class="modal-overlay" onclick="closeProjectModal()"></div>
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProjectModal()">✕</button>
+    
+    <div id="modalBody">
+      <!-- Content will be filled by JavaScript -->
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="social-links">
+      <a href="#" title="LinkedIn" class="social-icon">💼</a>
+      <a href="#" title="GitHub" class="social-icon">⚙️</a>
+      <a href="#" title="Email" class="social-icon">📧</a>
+      <a href="#" title="Facebook" class="social-icon">👥</a>
+    </div>
+    <p>© 2026 AIS Portfolio. All rights reserved.</p>
+    <a href="#home" class="back-to-top">↑ Back to Top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
